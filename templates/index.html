@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Safety Checker</title>
+    <link rel="stylesheet" href="../scripts/styles.css">
+   <!-- <link rel="stylesheet" href="{{ url_for('static', filename='.../styles.css') }}">-->
+
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="../assets/6049722.png" alt="Phishing Detection" class="logo">
+        </div>
+        <h1>Phishing URL Detector</h1>
+        <div class="checker-box">
+            <input type="text" id="urlInput" placeholder="Enter URL to check...">
+            <button onclick="checkURL()">Check URL</button>
+        </div>
+        <div class="result" id="result">
+            <!-- Results will be displayed here -->
+        </div>
+        <div class="safety-tips">
+            <h2>Safety Tips</h2>
+            <ul>
+                <li>Check for HTTPS in the URL</li>
+                <li>Look for misspellings in domain names</li>
+                <li>Be cautious of URLs with random numbers/letters</li>
+                <li>Verify the domain name carefully</li>
+            </ul>
+        </div>
+    </div>
+    <script src="../scripts/script.js"></script>
+    <!--<script src="{{ url_for('static', filename='.../scripts/script.js') }}"></script>-->
+
+</body>
+</html>
